@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch JS</title>
+</head>
+<body>
+    <script>
+        /*
+        //Example 1
+        var age=21;
+        switch(true){
+            case (age>=15 && age<=20):
+                document.write("You are not eligible");
+            break;
+
+            case (age>=21 && age<=30):
+                document.write("You are eligible");
+            break;
+
+            default:
+                document.write("Enter Valid Date");
+        }
+        document.write("<br><br><br>")
+        //----------------------------------------------------
+
+        //Example2
+
+        var day=2;
+        switch(day){
+            case 0:
+                document.write("Today is Monday");
+            break;
+            case 1:
+                document.write("Today is Tuesday");
+            break;
+            case 2:
+                document.write("Today is Wednesday");
+            break;
+            case 3:
+                document.write("Today is Thrusday");
+            break;
+            case 4:
+                document.write("Today is Friday");
+            break;
+            case 5:
+                document.write("Today is Saturday");
+            break;
+            default:
+                document.write("Today is !!! SUNDAY !!!");
+        }
+        document.write("<br><br><br>")
+        //----------------------------------------------------
+
+        //Example3
+        // now lets take user input for switch cases and use document.write box
+
+        var car=prompt("Enter car brand name");
+        switch(car){
+            case'Maruti':
+                document.writeln("Swift");
+                document.writeln("Brezza");
+                document.write("Ertiga");
+            break;
+            case'Hyundai':
+                document.writeln("Aura");
+                document.writeln("Creta");
+                document.write("Verna");
+            break;
+            case'Tata':
+                document.writeln("Altroz");
+                document.writeln("Nexon");
+                document.write("Harrier");
+            break;
+            case'Mahindra':
+                document.writeln("XUV300");
+                document.writeln("ScorpioN");
+                document.write("XUV700");
+            break;
+            case'Honda':
+                document.writeln("Amaze");
+                document.writeln("Jazz");
+                document.write("City");
+            break;
+            case'Toyota':
+                document.write("Hilux");
+                document.write("Innova");
+                document.write("Fortuner");
+            break;
+            case'Skoda':
+                document.writeln("Slavia");
+                document.writeln("Octavia");
+                document.write("Superb");
+            break;
+            default:
+                document.write("Enter the valid brand name");
+        }
+
+        document.write("<br><br><br>")
+        */
+        //calculator operation using switch case
+
+        var x=prompt("Enter the first number");
+        var y=prompt("Enter the second number");
+        var z=prompt("Enter the operator")
+        switch(z){
+            case '+':
+                document.write(x+y);
+            
+            case'-':
+                document.write(x-y);
+            break;
+            case '*':
+                document.write(x*y);
+            break;
+            case'/':
+                document.write(x/y);
+            break;
+            case '%':
+                document.write(x%y);
+            break;
+            case'^':
+                document.write(x**y);
+
+            default:
+                alert("Enter the valid operator")
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach JS</title>           
+</head>
+<body>
+    <script>
+        //forEach(): run for each value of array
+
+        /* syntax
+        
+        a.forEach((function){
+            statement
+        });
+        
+        */
+
+        var a=["Ram","Shyam","Gopal","Mohan"];
+        a.forEach(function(value,index){
+            document.write(index+":"+value+"<br>");
+        });
+
+
+        document.write("<br><br>");
+
+        
+        var b=["Radha","Meera","Seeta","Geeta"];
+        b.forEach(loop);
+            function loop(value,index){
+            document.write(index+":"+value+"<br>");
+            }
+    </script>
+</body>
+</html>

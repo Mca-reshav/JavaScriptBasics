@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String(1) JS</title>
+</head>
+<body>
+    <script>
+        // there are various methods of string: 
+        /*
+        length()    toLowerCase()   toUpperCase()   includes()  startsWith()    endsWith()  search()    match()
+
+        indexOf()   lastIndexOf()   replace()   trim()  charAt()    charCodeAt()    fromCharCode()
+
+        concat()    split()     repeat()    slice()     substr()    substring()     toString()      valueOf()
+        
+        */
+
+        // 1. length()
+
+        var str="    javaScript is a scripting language,    it is a very popular front-end technology   ";
+        var a=str.length;
+        document.write(a);
+
+        document.write("<br><br>");
+
+        // 2.toUpperCase() and toLowerCase()
+
+        var b=str.toUpperCase();
+        document.write(b);
+
+        document.write("<br><br>");
+
+        // 3. includes()
+
+        var c=str.includes("is");
+        document.write(c);
+
+        document.write("<br><br>");
+
+        // 4. startsWith() and endsWith()
+
+        var d=str.startsWith("java");   // first character
+        document.write(d);
+
+        document.write("<br><br>");
+
+        // 5. search()
+        //work same as "includes" but it returns the index of searched element
+
+        var e=str.search("is");
+        document.write(e);
+
+        document.write("<br><br>");
+
+        // 6. match()
+        //it continue the search of element and put it in an array
+
+        var f=str.match(/is/g);
+        document.write(f);
+
+        document.write("<br><br>");
+
+        // 7. indexOf() and lastIndexOf()
+        //      >>              <<
+
+        var g=str.indexOf("is");
+        var h=str.lastIndexOf("is");
+        document.write(g+" "+h)
+
+        document.write("<br><br>");
+
+        //8. replace()
+
+        var i=str.replace("javaScript","TypeScript");
+        document.write(i);
+
+        document.write("<br><br>");
+
+        // 9. trim()
+
+        var j=str.trim();
+        document.write(j);  // it is clearly seen by using alert
+        //alert(j);
+
+        document.write("<br><br>");
+
+        // 10. charAt() : to return the value as per the passed index
+
+        var k=str.charAt("20");
+        document.write(k);
+
+    </script>
+</body>
+</html>

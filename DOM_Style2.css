@@ -1,0 +1,18 @@
+#outer{
+    width:300px;
+    height:300px;
+    margin: 100px auto 0;
+    border: 2px solid rgb(169, 73, 194);
+    border-radius: 2px;
+    padding:5px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#inner{
+    width:150px;
+    height:150px;
+    margin: 30px auto 0;
+    border-radius: 2px;
+    border: 2px solid rgb(215, 133, 101);
+    
+}

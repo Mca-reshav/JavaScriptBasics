@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global and Local Variable JS</title>
+</head>
+<body>
+    <script>
+        var x="Tommorow you will succeed your failure";//global variable
+        function hello(){
+            var a="Your Best Day Is Today";// variable is declared inside the function, so its scope is limited inside the function only
+            document.write(a+"<br>");// like here i.e. local variable
+            document.write(x+"<br>")
+        }
+        hello();
+        document.write(a+"<br>");// global variable
+        document.write(x);
+    </script>
+</body>
+</html>

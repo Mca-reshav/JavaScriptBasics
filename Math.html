@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Js</title>
+</head>
+<body>
+    <script>
+        // Math() method of js used in mathematical operations
+
+        /*
+        ceil(x)     floor(x)    round(x)    trunc(x)    max(x,y,z...n)  min(x,y,z...n)
+
+        sqrt(x)     cbrt(x)     po(x,y)     random()    abs(x)      PI
+        */
+
+        // 1. ceil(x) and floor(x)
+
+        var a= Math.ceil (1.45);    // return nearest upper value
+        var b=Math.floor(5.66);
+        document.writeln(a);
+        document.write(b);
+
+        document.write("<br><br>");
+
+        // 2. round() and Trunc()
+
+        var c=Math.round(5.054541);     // changes as value go below or above 0.5
+        document.writeln(c);
+        var d=Math.trunc(2.54147);  //only interger value
+        document.write(d);
+
+        document.write("<br><br>");
+
+        // 3. max() and min()
+
+        var e=Math.max(19,10,20,4);
+        document.write(e);  // return the highest value
+
+        document.write("<br><br>");
+
+        // 4. sqrt() and cbrt()
+
+        var f=Math.cbrt(343);
+        document.write(f);
+
+        document.write("<br><br>");
+
+        // 5. pow(x,y)
+
+        var g=Math.pow(2,4);
+        document.write(g);
+
+        document.write("<br><br>");
+
+        // 6. random()
+
+        //var h=Math.random();
+
+        var h=Math.floor(Math.random()*1000)+1;
+        document.write(h);
+
+        document.write("<br><br>");
+
+        // 7. abs(x): absolute value
+
+        var i=Math.abs(-5.3433);
+        var j=Math.abs(null);
+        document.writeln(i);
+        document.write(j);
+
+        document.write("<br><br>");
+
+        // 8. PI
+
+        var k=Math.PI;
+        document.write(k);
+
+    </script>
+</body>
+</html>

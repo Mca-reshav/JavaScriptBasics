@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidimensional array JS</title>
+    <style>
+        table,td,th{
+            border-radius: 2px;
+            padding: 7px;
+            background-color: aliceblue;
+            color: rgb(68, 68, 92);
+        }
+        table{
+            margin:10px;
+            border: 1px ;
+            box-shadow: 0px 1px 2px rgb(64, 64, 86);
+        }
+        td,th{
+            padding: 10px;
+            background-color: rgb(210, 225, 238);
+            font-family:Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+       
+        document.write("<table border='2px' cell-spacing='5px'>");
+        var ary=[["Ram",25,"MCA","Delhi"],
+                 ["Shyam",24,"BCA","Mumbai"],
+                 ["Ganesh",22,"BBA","Kolkata"],
+                 ["Sita",23,"MBA","Bengaluru"],
+                 ["Geeta",21,"BBA","Kolkata"],
+                 ["Sohan",24,"MBA","Mumbai"],
+                 ["Radha",22,"MCA","Chennai"]]
+                // delete ary[1][2]; ----to delete
+                //ary[1][2]="MCA"; ----to modify
+        for(var a=0;a<ary.length;a++){
+            document.write("<tr>");
+            for(var b=0;b<ary[a].length;b++){
+                document.writeln("<td>"+ary[a][b]+"</td>");
+            }
+            document.write("</tr>");
+            
+        }
+        document.write("<th colspan=4>"+ary.length+"</th>");
+        document.write("</table>");
+
+        
+    </script>
+</body>
+</html>

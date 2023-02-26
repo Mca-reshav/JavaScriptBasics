@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object JS</title>
+</head>
+<body>
+    <script>
+        //Date Object in JS
+
+        /*
+        toDateString()  getDate()   getFullYear()   getMonth()  getDay()    getHours()
+
+        getMinutes()    getSeconds()    getMilliSeconds()    setDate()   setFullYear()   
+
+        setMonth()  setDay()    setHours() setMinutes()    setSeconds()    setMilliSeconds()   
+        */
+
+        // 1. toDateString()
+
+        var a=new Date();
+        document.writeln(a+"<br>");     //more detailed 
+        document.write(a.toDateString());   //show in readable form
+
+        document.write("<br><br>");
+
+        // 2. getDate()
+
+        var b= new Date();
+        document.write(b.getDate()+"<br>");
+
+        var c=new Date("January 1 1998");// to find day on particular date in past 
+        document.write(c.getDay());
+
+        document.write("<br><br>");
+
+        // 3. setDate()
+
+        var d= new Date();
+        d.setFullYear(2024);
+        document.write(d+"<br>");
+        document.write(d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear());
+
+    </script>
+</body>
+</html>

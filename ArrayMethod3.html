@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods(3) JS</title>
+</head>
+<body>
+    <script>
+        //Array Methods
+
+
+        /*Sort()    Reverse()   Pop()   Push()  Shift() Unshift()  
+
+        Concat()    Join()      Slice() Splice() IsArray()  IndexOf()
+
+        LastIndexOf()   Every() Filter()    Find()  FindIndex() Includes()
+
+        Some()  ForEach()   ToString()  ValueOf()   Fill()   */
+
+
+         // 9. Some() and Every()
+
+         var ages=[10,15,20,25];
+        document.write(ages +"<br>");
+
+        var k=ages.some(checkAdult);
+        //var k=ages.every(checkAdult);
+        document.write(k+"<br>");
+
+        function checkAdult(age){
+            return age>=18;
+        }
+
+        // some(): some value may or may not true
+        // every(): each value may or may not true
+        document.write("<br><br>")
+
+        // 10. Find() and FindIndex()
+
+        var ages=[12,18,15,20,23];
+        document.write(ages+"<br>");
+
+        var l=ages.find(checkAdult);    // It will return the value of firstly qualified index as per the condition
+        var m=ages.findIndex(checkAdult);
+        document.write(l+"<br>");
+        document.write(m+"<br>");
+
+        function checkAdult(ages){
+            return ages>=18;
+        }
+
+
+        // 11. filter()
+
+        // It will creates an array filled with all the elements of an array that pass a test
+
+        var n=ages.filter(checkAdult);
+        document.write(n+"<br>");
+
+
+        // 12. toString(), valueOf() and fill()
+
+        var names=["Ram","Shyam","Mohan"];
+        names.toString();   // It will converts the existing array into a string and return
+        document.write(names);
+
+        document.write("<br><br>");
+
+        //valueOf() work same as document.write()
+
+        var names=["Radha","Meera","Seeta"];
+        names.fill("RAM");  // fill all the elements in an array with a static value
+        document.write(names);
+    </script>
+</body>
+</html>

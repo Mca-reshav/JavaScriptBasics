@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods(1) JS</title>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //Array Methods
+
+
+        /*Sort()    Reverse()   Pop()   Push()  Shift() Unshift()  
+
+        Concat()    Join()      Slice() Splice() IsArray()  IndexOf()
+
+        LastIndexOf()   Every() Filter()    Find()  FindIndex() Includes()
+
+        Some()  ForEach()   ToString()  ValueOf()   Fill()   */
+
+
+
+        // 1. Sort() and Reverse()
+
+        var a=["Ram","Shyam","Mohan","Seeta","Radha"];
+        document.write(a+"<br>");
+        a.sort();   //It will sort the elements of an array in alphabetical order
+        document.write(a+"<br>");
+        a.reverse();    //It will sort the elements of an array in the reverse alphabetical order
+        document.write(a+"<br>");
+
+        document.write("<br><br><br>")
+
+
+
+        // 2.Push() and Pop()
+
+        var a=["Ram","Shyam","Mohan","Seeta","Radha"];
+        document.write(a+"<br>");
+        a.pop();   //It will delete an element from the last index of an array
+        document.write(a+"<br>");
+        a.push("Meera","Geeta");   //It will add elements at the last index of an array
+        document.write(a+"<br>");
+
+        document.write("<br><br><br>")
+
+
+
+        //Shift() and UnShift()
+
+        var a=["Ram","Shyam","Mohan","Seeta","Radha"];
+        document.write(a+"<br>");
+        a.shift();   //It will delete an element from the first index of an array
+        document.write(a+"<br>");
+        a.unshift("Ganesh","Vishnu");   //It will add elements at the first index of an array
+        document.write(a+"<br>");
+
+        document.write("<br><br><br>")
+
+
+
+        //Concat() and Join()
+
+        var a=["Delhi","Mumbai","Kolkata","Chennai"];
+        var b=a.concat("Bengaluru","Patna");    //It will concatenate the elements of an array with an target array
+        document.write(b);
+        //------------------------------------------------------------
+        document.write("<br><br><br>")
+
+        var c=["Noida","Pune","Surat","Hyderabad"];
+        var d=[5,4,5,9];
+        var e=["UttarPradesh","Maharastra","Gujarat","AndraPradesh"];
+        var f=c.concat("<br>"+d+"<br>",e);
+        document.write(f);
+
+         //------------------------------------------------------------
+        document.write("<br><br><br>")
+        var g=f.join(" "+"|"+" ");  //Work as concat but the user can make separation as per choice
+        document.writeln(g);
+    </script>
+</body>
+</html>

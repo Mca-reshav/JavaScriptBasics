@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For in loop JS</title>
+</head>
+<body>
+    <script>
+        //previously we print values one by one , now for in loop can do simultaneously for an object
+
+        var obj={
+            fname:"Hello",
+            lname:"World",
+            age:25,
+            email:"hw@gmail.com"
+        };
+        console.log(obj.fname);// one by one print
+
+        for(var key in obj){
+            document.write(key+": "+obj[key]+"<br>");
+        };  // new way to print simultaneously using for in loop
+
+    </script>
+</body>
+</html>

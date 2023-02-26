@@ -1,0 +1,31 @@
+.abc{
+    color: white;
+    background-color: rgb(84, 46, 119);
+    border: 2px solid rgb(84, 46, 119);
+    border-radius: 3px;
+    line-height: 6;
+    font-size:x-large;
+    font-weight: 600;
+    text-align: center;
+    margin:100px auto 0;
+    padding:10px;
+    width:300px;
+    height: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.xyz{
+    color:white;
+    background-color: rgb(46, 119, 50);
+    border: 2px solid rgb(46, 119, 50);
+    border-radius: 3px;
+    line-height: 6;
+    font-size:x-large;
+    font-weight: 600;
+    text-align: center;
+    margin:100px auto 0;
+    padding:10px;
+    width:300px;
+    height: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions JS</title>
+</head>
+<body>
+    <script>
+        //Functions: Use of function reduces the effort to write repetitive codes and file size
+
+        // 1. Example 
+
+        function abc(){
+            document.writeln("Hello");
+            document.write("World");
+        }
+        abc();
+        document.write("<br>");
+        document.write("<br>");
+        document.write(" Namaste ");
+        document.write("<br>");
+        document.write("<br>");
+        abc();
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+        // 2. Example - Functions with parameters
+
+        function sum(a=2,b=3){  // default value is assigned
+            document.write(a+b);
+        }
+        sum();
+        document.write("<br>");
+        document.write("<br>");
+        sum(10,20);
+        document.write("<br>");
+        document.write("<br>");
+
+        sum(50,100);
+        document.write("<br>");
+        document.write("<br>");
+
+        sum(100,200);
+
+        // 3. Example - Functions with return value
+
+        function sum(eng,math,sci){
+            var s=eng+math+sci;
+            return s;
+        }
+        function percent(tt){
+            var per=tt/300*100;
+            document.write(per+"%");
+        }
+        var total= sum(50,60,70);
+        percent(total);
+
+    </script>
+</body>
+</html>

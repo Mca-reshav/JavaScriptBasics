@@ -1,0 +1,21 @@
+ul{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(62, 60, 60);
+    list-style-type:circle;
+}
+#list1 li{
+    background-color: rgba(216, 139, 139, 0.781);
+    border:2px;
+    padding: 10px;
+    border-radius: 3px;
+    width: 80px;
+    margin: 5px;
+}
+#list2 li{
+    background-color: rgba(139, 216, 146, 0.788);
+    border:2px;
+    padding: 10px;
+    border-radius: 3px;
+    width: 80px;
+    margin:5px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConfirmBox & PromptBox JS</title>
+    <style>
+        h1{
+            color:rgb(113, 65, 244);
+        }
+
+        div{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 200;
+            box-sizing: content-box;
+            border: 1px;
+            background-color: rgb(216, 226, 235);
+            padding: 10px;
+            border-radius: 3px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //Confirm Box
+        var a =confirm("Do you like our webpage?");
+        if(a){
+            alert("Thanks");
+        }else{
+            alert("Sorry")
+        }
+
+        //------------------------------------------------
+
+        //Prompt Box
+        document.write("<div>");
+        var x=prompt("Enter Your Percentage")
+        if(x>=80 && x<=100){
+            document.write("<h1>"+"Your are in 1st Division"+"</h1>");
+        }
+        if(x>=60 && x<80){
+            document.write("Your are in 2nd Division");
+        }
+        if(x>=40 && x<60){
+            document.write("Your are in 3rd Division");
+        }
+        if(x>=33 && x<40){
+            document.write("Just Passed");
+        }
+        if(x<33){
+            document.write("Better Luck Next Time");
+        }
+        document.write("</div>");  
+    </script>
+</body>
+</html>

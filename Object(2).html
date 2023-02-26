@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object(2) JS</title>
+</head>
+<body>
+    <script>
+        //Creating an object in new way
+
+        var a=new Object();
+            a.fname="Ram";
+            a.lname="Kumar";
+            a.age=25;
+        console.log(a);//Not get effected of scope of the variable
+        document.write(a.email);    // due to scope of the variable is local
+            a.email="ramkumar@gmail.com";
+            document.write(a.email);    // here it is global
+
+
+            document.write("<br><br>");
+        //Array of objects
+
+        var b=["Hello",{
+                name:"HelloWorld",
+                age:25
+        },
+        {
+            email:"hw@gmail.com",
+            location:"Delhi"
+        }];
+
+        console.log(b);
+        document.write(b[0]);
+
+        document.write("<br><br>");
+
+        // using for loop 
+
+        for(var c=0;c<3;c++){
+            document.write(b[c]+"<br>"+b[c+1].name+"<br>"+b[c+1].age+"<br>"+b[c+2].email+"<br>"+b[c+2].location);
+        }
+        
+        
+        //const in array and object
+
+
+        // 1. const in array
+
+        const x=[10,20,30];
+       // x=30;   // this will not work
+        x[1]=30;    // this will work rather re-declartion is not possible in const
+        //x=[40,50,60];   // not work, onlt if declared individually 
+        console.log(x[1]);
+
+        // 2. const in object
+
+        const y={
+            name:"Ram",
+            age:25
+        };
+        y.name="Shyam";     //this will work as declared individually
+        y.age=20;
+        /*y={
+            name:"ganesh"
+        };*/  // not work
+        console.log(y);
+    </script>
+</body>
+</html>

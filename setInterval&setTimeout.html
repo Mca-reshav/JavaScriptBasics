@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval and setTimeout JS</title>
+    <style>
+    #test{
+        width:100px;
+        height: 100px;
+        background-color: red;
+    }
+    #test1{
+        width:100px;
+        height: 100px;
+        background-color: blue;
+    }
+    #test2{
+        width:100px;
+        height: 100px;
+        background-color: green;
+    }
+    </style>
+</head>
+<body>
+    <div id="test"></div>
+    <div id="test1"></div>
+    <div id="test2"></div>
+    <button onclick="stop()">Stop</button>
+    <script>
+        //setInterval and clearInterval: Animation
+
+        //setInterval(functionName,millisecond)       1000millisecond=1sec, auto call and infinite run
+        //clearInterval() to stop or pause the animation 
+
+
+    var a=0;
+        setInterval(anime,100);
+        function anime(){
+            a=a+10;
+            var target=document.getElementById("test");
+            target.style.marginLeft=a+'px';
+        }
+
+
+        var b=0;
+        var id=setInterval(anim,200);
+        function anim(){
+            b=b+10;
+            if(b==300){
+                clearInterval(id);
+            }else{
+                var target1=document.getElementById("test1");
+                target1.style.width=b+'px';
+            }
+        }
+
+
+        //setTimeout and clearTimeout: for one time animation
+        
+        var x=setTimeout(ani,5000);
+        function ani(){
+            var target2=document.getElementById("test2");
+            target2.style.width="500px";
+        }
+        function stop(){
+            clearTimeout(x);
+            clearInterval(id);
+        }
+        </script>
+</body>
+</html>

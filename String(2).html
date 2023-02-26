@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String(2) JS</title>
+</head>
+<body>
+    <script>
+         // there are various methods of string: 
+        /*
+        length()    toLowerCase()   toUpperCase()   includes()  startsWith()    endsWith()  search()    match()
+
+        indexOf()   lastIndexOf()   replace()   trim()  charAt()    charCodeAt()    fromCharCode()
+
+        concat()    split()     repeat()    slice()     substr()    substring()     toString()      valueOf()
+        
+        */
+
+
+        // 11. charCodeAt() and fromCharCode(): it will return the skycode i.e., unicode of character
+        
+        var str="JavaScript is a scripting langauge";
+        var a=str.charCodeAt(1);
+        document.write(a);
+
+        var b=String.fromCharCode(2);   // return from keyboard
+        document.write(b);
+
+        document.write("<br><br>");
+
+        // 12. concat(): to merge
+
+        var str1="Hello";
+        var str2=" Java";
+        var str3=" Script";
+        var c=str1.concat(str2,str3);
+        document.write(c);
+
+        document.write("<br><br>");
+
+        // 13. split()
+
+        var d=str.split("t");
+        document.write(d);
+
+        document.write("<br><br>");
+
+        // 14. repeat()
+
+        var e=str.repeat(3);
+        document.write(e);
+
+        document.write("<br><br>");
+
+        // 15. slice(): same as array slice method
+
+        var f=str.slice(3,-11);
+        document.write(f);
+
+        document.write("<br><br>");
+
+        // 16. subStr() and subString()
+
+        var g=str.substr(4,6);  // from index, further go
+        document.writeln(g);
+
+        var h=str.substring(4,10);  // from index, to index
+        document.write(h);
+
+        document.write("<br><br>");
+
+        // 17. toString() 
+        var k=50;
+        var i=k.toString(); // to see the effect comment this line
+        document.write(i+50);
+
+    </script>
+</body>
+</html>

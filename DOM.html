@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JS</title>
+    <link rel="stylesheet" href="DOM_Style.css">
+    
+</head>
+<body><!--
+
+
+    DOM: Document object model- html dom tree possesses of root (html) and child nodes(head or body)
+
+    In JavaScript nodes can: Element node- targeting the tags of html
+                             Text node- targeting the text written inside a tag
+                             attribute node- targeting the class/id/style/onClick 
+
+    JavaScript perform two operations on nodes- (Get and Set)
+
+    DOM targeting methods:  by id       document.getElementById(id)
+                            by class    document.getElementByClassName(Name)
+                            by tag      document.getElementByTagName(Name)
+    
+    Other Methods:
+
+    document.all                        document.links                        
+    document.documentElement            document.URL
+    document.head/title/body/doctype    document.BaseURL
+    document.anchors                    document.domain
+    etc.
+
+
+-->
+
+    <div class="wrapper">
+    
+        <div class="header" id="headers">
+            <h1 id="heading">
+                Front-End Technologies
+            </h1>
+        </div>
+        <div class="nav-bar" id="nav-bars">
+            <a href=" ">Home</a>
+            <a href=" ">About</a>
+            <a href=" ">Check</a>
+            <a href=" ">List</a>
+            <a href=" ">Enquiry</a>
+        </div>
+        <div class="content-box" id="content-boxes">
+            <div class="major-side-bar"><span>
+                <img src="../Extras/html.png" height=115px width=130px alt="HTML" id="html-img">
+                <img src="../Extras/css.png" height=115px width=100px alt="CSS">
+                <img src="../Extras/javascript.png" height=115px width=210px alt="javascript">
+                <img src="../Extras/react.png" height=115px width=145px alt="ReactJS">
+                <img src="../Extras/node.png" height=115px width=220px alt="NodeJS">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, libero molestiae. Pariatur aperiam perferendis expedita. Praesentium dignissimos facilis, quis architecto quisquam quia inventore totam blanditiis quibusdam sapiente quod consectetur suscipit at deleniti enim quasi. Nostrum aut quam quos? Tempore magnam vero debitis ad ab et error omnis doloribus nihil beatae.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, libero molestiae. Pariatur aperiam perferendis expedita. Praesentium dignissimos facilis, quis architecto quisquam quia inventore totam blanditiis quibusdam sapiente quod consectetur suscipit at deleniti enim quasi. Nostrum aut quam quos? Tempore magnam vero debitis ad ab et error omnis doloribus nihil beatae.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, libero molestiae. Pariatur aperiam perferendis expedita. Praesentium dignissimos facilis, quis architecto quisquam quia inventore totam blanditiis quibusdam sapiente quod consectetur suscipit at deleniti enim quasi. Nostrum aut quam quos? Tempore magnam vero debitis ad ab et error omnis doloribus nihil beatae.</p>
+            </div>
+            <div class="minor-side-bar" id="minor-side-bars">
+            <ul id="left-atag">
+            <li><a href=" ">HTML</a></li>
+            <li><a href=" ">CSS</a></li>
+            <li><a href=" ">JavaScript</a></li>
+            <li><a href=" ">SASS</a></li>
+            <li><a href=" ">PHP</a></li>
+            <li><a href=" ">MySql</a></li>
+            <li><a href=" ">React.JS</a></li>
+            <li><a href=" ">Angular</a></li>
+            <li><a href=" ">Node.JS</a></li>
+            <li><a href=" ">Bootstrap</a></li>
+            <li><a href=" ">TailWindCSS</a></li>
+            <li><a href=" ">Three.JS</a></li>
+            <li><a href=" ">Express.JS</a></li>
+            <li><a href=" ">MongoDB</a></li>
+            <li><a href=" ">Oracle</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="footer" id="footers">
+            <a href=" ">Home</a>
+            <a href=" ">About</a>
+            <a href=" ">FAQ</a>
+            <a href=" ">&ncap;</a>
+            <a href=" ">Enquiry</a>
+        </div>
+    </div>
+<script src="DOM_Script.js">
+</script>
+</body>
+</html>

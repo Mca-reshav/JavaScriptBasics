@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects(1) JS</title>
+</head>
+<body>
+    <script>
+        //Objects: Advanced version of array
+
+        // Array: var a=["Ram","Kumar",20,"Delhi"];---index
+
+        /* object: var a={
+                            fname:"Ram",
+                            lname:"Kumar",
+                            roll: 20,
+                            location:"Delhi"
+                             };---name
+        */
+
+
+        //Different types of objects
+
+        var a={
+                fname:"Hello",
+                lname:"World",
+                age:25,
+                email:"helloWorld@gmail.com",
+                favMovies:["Dhoom","Sholay","Dhol"],    //Array in object
+                salary:function(){
+                    return 25000;
+                },  //function in object
+                fullname:function(){
+                    return this.fname+" "+this.lname;
+                }   //use here "this" keyword to retrieve the property value of an object     
+        };
+
+        console.log(a+"<br>");// object will not get displayed unless you choose separately
+        document.write("This is my favorite movie:"+" "+a.favMovies[1]+"<br>");
+        document.write(a.salary()+"<br>");
+        document.write(a.fullname());
+
+        document.write("<br><br>");
+
+        //an object inside an object
+
+        var b={
+                brandName:"Tata",
+                owner:"Ratan Tata",
+                models:["CompactSUV"," MidSizeSUV"," SUV"],
+                variants:{
+                    top:"XZ",
+                    mid:"XT",
+                    base:"XE"
+                }
+        };
+
+        document.write(b.brandName+"<br>"+b.owner+"<br>"+b.models+"<br>"+b.variants.top);
+    </script>
+</body>
+</html>

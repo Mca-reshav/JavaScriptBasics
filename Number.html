@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number JS</title>
+</head>
+<body>
+    <script>
+        //number() method includes:
+
+        /*
+        number()    parseInt()  parseFloat()    isFinite()
+
+        isInteger() toFixed()   toPrecision()
+        */
+
+        // 1. Number()
+
+        var a="99.99";
+        var b=true;
+        var num=Number(a);
+        var num2=Number(b);
+        document.write(num+" "+num2);
+
+        document.write("<br><br>");
+
+        // 2. parseInt() and parseFloat()
+
+        //var c="99 88 77";
+        var c="10.55";
+        //var c="050 years";
+        //var c="I am 50";
+        var num3=parseInt(c);
+        document.writeln(num3);   // index 0 will be printed 
+
+        var num4=parseFloat(c);
+        document.write(num4);
+
+        document.write("<br><br>");
+
+        // 3. isFinite() and isInteger()
+
+        //var d="Hello";
+        var d=-1.99;
+        //var d=Infinity;
+        var num5=Number.isFinite(d);
+        document.write(num5);
+
+        var num6=Number.isInteger(d);
+        document.write(num6);
+
+        document.write("<br><br>");
+
+        // 4. toFixed() and toPrecision()
+
+        var e=5.848545;
+        var num7=e.toFixed(3);
+        document.writeln(num7);   // round off value at third place after decimal
+        
+        var num8=e.toPrecision(3);
+        document.write(num8);
+    </script>
+</body>
+</html>

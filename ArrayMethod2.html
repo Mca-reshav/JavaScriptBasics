@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method(2) JS</title>
+</head>
+<body>
+    <script>
+        //Array Methods
+
+
+        /*Sort()    Reverse()   Pop()   Push()  Shift() Unshift()  
+
+        Concat()    Join()      Slice() Splice() IsArray()  IndexOf()
+
+        LastIndexOf()   Every() Filter()    Find()  FindIndex() Includes()
+
+        Some()  ForEach()   ToString()  ValueOf()   Fill()   */
+
+
+        // 5. Slice() and Splice()
+
+        /*
+        -4      -3      -2      -1
+        0       1       2       3
+        Delhi   Mumbai  Kolkata Chennai
+        */
+
+        var a=["Delhi","Mumbai","Kolkata","Chennai"];
+        document.write(a+"<br>");
+        var b=a.slice(1,3); //It will separate the selected elements into a new array
+        document.write(b+"<br>");
+
+        document.write("<br><br><br>");
+
+
+        //Splice(index,how many delete,"Newvalue")
+
+        var c=["Shimla","Ooty","Kohima","Masoorie","Ladakh"];
+        document.write(c+"<br>");
+        c.splice(3,0,"Darjeeling","Goa");   //No deletion, only addition
+        document.write(c+"<br>");
+
+        c.splice(2,1,"Agra","Gwalior"); //Deletion and Addition
+        document.write(c+"<br>");
+
+        c.splice(2,3);
+        document.write(c+"<br>");   //No addition, only deletion
+
+        c.splice(-2,1);
+        document.write(c+"<br>");   //Also use minus index value
+
+        document.write("<br><br><br>");
+
+        // 6. IsArray()
+
+        var d=["NewYork","London","Paris","Berlin"];
+        //var d=50
+        document.write(d+"<br>");
+        var e=Array.isArray(d); //It will show either true or false as per the selected array is an array or not
+        document.write(e+"<br>");
+
+        document.write("<br><br><br>");
+
+        var x="Ram";
+        document.write(x+"<br>");
+        if(Array.isArray(x)){
+            document.write("This is an Array");
+        }else{
+            document.write("This is not an Array");
+        }
+
+        document.write("<br><br><br>");
+
+
+        // 7. IndexOf() and LastIndexOf()
+
+        //to Search either 'some' exist or not if yes then show its index
+
+        var f=["Apple","Samsung","Xiaomi","Oneplus","Moto"];
+        document.write(f+"<br>");
+        var g=f.indexOf("Samsung",2); //It will index from LHS
+        //var g=f.indexOf("Samsung",-1);
+        document.write(g+"<br>");
+
+        var h=f.lastIndexOf("Samsung",3); //It will index from RHS
+        document.write(h+"<br>");
+
+        document.write("<br><br><br>");
+
+
+
+        // 8. Includes()
+
+        var i=["Honda","Hyundai","Tata","Mahindra"];
+        document.write(i+"<br>");
+
+        var j=i.includes("Tata");
+        document.write(j+"<br>");
+
+
+    </script>
+</body>
+</html>

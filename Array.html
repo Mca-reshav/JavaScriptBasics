@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array JS</title>
+</head>
+<body>
+    <script>
+        // Array is used to store multiple values in a variable
+
+        var a=[10,20,30,40,50];
+        document.write(a);
+        document.write("<br><br>");
+        //------------------------------------------------------
+        var ary=[11,22,33,44,55];
+        for(var b=0;b<=4;b++){
+            document.writeln(ary[b]);
+        }
+        document.write("<br><br>");
+        //------------------------------------------------------
+        for(var c=0;c<=4;c++){
+            document.write(ary[c]+"<br>");
+        }
+        document.write("<br><br>");
+        //------------------------------------------------------
+        //Wap to show sum of elements in an array
+
+        var x=[100,200,300,400,500];
+        var sum=0;
+        for(var y=0;y<=4;y++){
+            document.writeln(x[y]);
+            sum=sum+x[y];
+        }
+        document.write("<br>");
+        document.write("Total Sum:"+sum);
+    </script>
+</body>
+</html>

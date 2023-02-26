@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map method JS</title>
+</head>
+<body>
+    <script>
+         //map() Array method: alike loop, map will recreate an array where each element have some mathematical functionality
+
+        //if we want to print an array by multiplying it by 10
+        var ary=[10,20,30];
+        var y=ary.map(mul);
+        document.write(y);
+
+        function mul(x){
+           return x*10;
+        }
+
+        document.write("<br><br>");
+
+
+        var arr=[{fname:"Hello",lname:"World"}, 
+                {fname:"Namaste",lname:"World"},
+                {fname:"Hey",lname:"World"}];
+        var z=arr.map(test);
+        document.write(z);
+
+        function test(a){
+            return `${a.fname}|${a.lname}<br>`;
+        }
+
+    </script>
+</body>
+</html>

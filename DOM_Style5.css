@@ -1,0 +1,18 @@
+body{
+    color:rgb(50, 49, 49);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(222, 216, 216);
+    
+}
+h2{
+    background-color: rgb(115, 114, 114);
+    border-radius: 3px;
+    border: 2px;
+    padding: 10px;
+}
+p{
+    background-color: rgb(131, 126, 126);
+    border-radius: 3px;
+    border: 2px;
+    padding: 10px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variable JS</title>
+</head>
+<body>
+    <script>
+        //There are three types of variable in js : var, let, const
+
+        //----------------------var---------------------------
+        var x="helloworld"
+        document.write(x + "<br>");
+        
+        //override var
+        var y="helloworld"
+        var y="hello"
+            y="new world"
+        document.write(y + "<br>");
+
+        //undefined
+        var first, second
+        first=50
+        document.write(first+"<br>"+second + "<br><br><br>");
+
+        //----------------------let---------------------------
+
+        let z="helloworld"
+        document.write(z+"<br>");
+
+        //Let: No variable can be declared more than once unlike var but value can be overwritten
+
+        let a="hello"
+            a="world"
+        document.write(a+ "<br><br><br>");
+
+        //--------------------const---------------------------
+
+        const b="today"
+        document.write(b+"<br>");
+
+        //const: No declaration and overwrite can be done more than once
+        
+    </script>
+</body>
+</html>
